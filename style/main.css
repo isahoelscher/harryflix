@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rouge+Script&display=swap");
+
+:root {
+  --pink: #ff79c6;
+  --background: #383a59;
+  --comment: #6272a4;
+  --purple: #bd93f9;
+  --green: #50fa7b;
+  --cyan: #8be9fd;
+  --orange: #ffb86c;
+  --foreground: #f8f8f2;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+  color: var(--foreground);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--purple);
+  font-family: "Poppins", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0 0 40px;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--purple);
+  position: relative;
+}
+
+header .logo::before{
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 10rem;
+  bottom: -15px;
+  left: 0;
+  border-radius: 5px;
+  background: var(--pink);
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--purple);
+  margin-right: 40px;
+  transition: 0.5s ease-in-out;
+}
+
+header nav a:hover {
+  color: var(--comment);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Filme principal */
+
+.filme-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  background: linear-gradient(
+      rgba(189, 147, 249, 0.9),
+      rgba(189, 147, 249, 0.05) 100%
+    ),
+    url(/img/capa.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.filme-principal .titulo {
+  margin-top: 20px;
+  font-size: 50px;
+  color: var(--pink);
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.botao {
+  min-width: 150px;
+  max-width: 250px;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid;
+  background: none;
+  color: var(--purple);
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.6s ease-in-out;
+}
+
+.botao:hover {
+  background-color: none;
+  color: white;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  color: #ff79c6;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 10px;
+  letter-spacing: 15px;
+}
+
+.boxmovies {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 0;
+}
+
+.boxmovies .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: url(/img/mini1.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.boxmovies .card:nth-child(2) {
+  background: url(/img/mini2.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+
+.boxmovies .card:nth-child(3) {
+  background: url(/img/mini3.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+.boxmovies .card:nth-child(4) {
+  background: url(/img/mini4.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+.boxmovies .card:nth-child(5) {
+  background: url(/img/mini5.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+.boxmovies .card:nth-child(6) {
+  background: url(/img/mini6.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+.boxmovies .card:nth-child(7) {
+  background: url(/img/mini7.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+.boxmovies .card:nth-child(8) {
+  background: url(/img/mini8.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+.boxmovies .card:nth-child(9) {
+  background: url(/img/mini9.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+.boxmovies .card:nth-child(10) {
+  background: url(/img/mini10.jpg);
+  background-position: 0px 20%;
+  height: 400px;
+  background-size: cover;
+}
+
+.boxmovies .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.boxmovies .card:hover .content {
+  transform: translateY(-20px);
+}
+
+.boxmovies .card .content .imgBx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.boxmovies .card .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boxmovies .card .content .contentBx h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 40px 0 0px;
+  line-height: 1.1em;
+  margin-top: 300px;
+}
+
+.boxmovies .card .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.boxmovies .card .sci {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+}
+
+.boxmovies .card .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(13px);
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.boxmovies .card:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.boxmovies .card .sci li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.boxmovies .card .sci .watch-btn {
+  min-width: 150px;
+  max-width: 250px;
+  margin: 1px;
+  padding: 3px;
+  border: 2px solid;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.6s ease-in-out;
+}
+
+.boxmovies .card .sci .watch-btn:hover {
+  background: black;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(56, 58, 89);
+  background: linear-gradient(
+    180deg,
+    rgba(56, 58, 89, 1) 0%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: auto;
+  width: 100%;
+  font-family: "Poppins";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: var(--pink);
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
