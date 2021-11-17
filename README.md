@@ -9,7 +9,7 @@ Esse projeto foi realizado no Bootcamp de **HTML Web Developer** da Digital Inno
 - Utilizei a paleta de cores disponibilizada no site do tema Dracula para ser a paleta do meu projeto.
 - Eu optei por não utilizar o carrossel de imagens com o plugin jQuery, então no lugar deste, eu coloquei cards de imagens.
 - Coloquei algumas interações nos botões do filme principal, ao clicar em "Watch now" é aberta uma lightbox (fiz utilizando o plugin Lity) com um iframe de um video do Youtube, que seria um documentário contento as melhores partes de todos os shows, no botão ao lado, onde diz Setlist, utilizei a mesma lightbox, porém agora com um iframe de uma playlist no spotify das musicas que ele toca nos shows da turnê. 
-- Nos cards, a ideia seria colocar vários shows dele nas diversas cidades diferentes, funcionaria como uma biblioteca de filmes mesmo, mas ao invés de filmes, seriam shows.
+- Nos cards, a ideia seria colocar vários shows dele nas diversas cidades diferentes, funcionaria como uma biblioteca de filmes mesmo, mas ao invés de filmes, seriam shows. Todas as fotos tem um padrão pois foram tiradas pelo fotógrafo da turnê (@anthonypham no instagram).
 
 
 
