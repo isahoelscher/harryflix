@@ -12,15 +12,7 @@ Esse projeto foi realizado no Bootcamp de **HTML Web Developer** da Digital Inno
 - Nos cards, a ideia seria colocar vários shows dele nas diversas cidades diferentes, funcionaria como uma biblioteca de filmes mesmo, mas ao invés de filmes, seriam shows. Todas as fotos tem um padrão pois foram tiradas pelo fotógrafo da turnê (@anthonypham no instagram).
 
 
-
-### :desktop_computer: Comportamento da interface no Desktop
-
-
-
-
-
-### :iphone: Comportamento da interface Mobile:
-
+### ✨ Você pode acessar o resultado do projeto clicando [AQUI](https://harryflixx.netlify.app/) ✨
 
 
 
