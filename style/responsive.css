@@ -10,16 +10,10 @@
         margin-top: 0px;
         
     }
-    header .container nav{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
 }
 
 @media screen and (min-width: 1000px){
     .descricao{
-        width: 20%;
+        width: 80%;
     }
 }
